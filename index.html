@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Career Path Explorer</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  
+  <div class="container">
+    <!-- everything inside here -->
+  </div>
+
+
+
+  <h1> Career Path Explorer</h1>
+  <p>Select a field to explore careers</p>
+
+  <div class="buttons">
+    <button onclick="renderCareers('technology')">Technology</button>
+<button onclick="renderCareers('medical')">Medical</button>
+<button onclick="renderCareers('business')">Business</button>
+
+    <input 
+  type="text" 
+  id="searchInput" 
+  placeholder="Search career..." 
+  onkeyup="searchCareer()"
+/>
+
+  </div>
+  <button onclick="toggleDarkMode()" id="darkBtn">🌙 Dark Mode</button>
+<br><br>
+
+<button onclick="startQuiz()">🧠 Take Career Quiz</button>
+
+
+
+  <div id="result"></div>
+
+  <script src="data/careers.js"></script>
+<script src="js/app.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/quiz.js"></script>
+<script src="js/storage.js"></script>
+
+</body>
+</html>
